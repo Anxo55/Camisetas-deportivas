@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camisetas de Fútbol</title>
+    <title>Camisetas Deportivas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagenes/logo-principal.png" type="image/x-icon">
 </head>
@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="imagenes/camiseta-logo-principal.png" alt="Logo" id="logo" width="70">
+                <a href="#"><img src="imagenes/camiseta-logo-principal.png" alt="Logo" id="logo" width="70"></a>
             </div>
             <div class="menu">
                 <ul>
@@ -19,9 +19,8 @@
                     <li class="dropdown">
                         <a href="#">Categorías</a>
                         <div class="dropdown-content">
-                            <a href="#">Equipos Nacionales</a>
-                            <a href="#">Equipos Internacionales</a>
-                            <a href="#">Retro</a>
+                            <a href="#">NBA</a>
+                            <a href="#">Futbol</a>
                         </div>
                     </li>
                     <li><a href="#">Registrarse</a></li>
@@ -34,19 +33,90 @@
     <main>
         <section class="camisetas">
             <div class="camiseta">
-                <img src="camiseta1.jpg" alt="Camiseta 1">
-                <p>Descripción breve de la camiseta 1</p>
-                <span>Precio: $50</span>
+                <div class="carousel">
+                    <img src="imagenes/butler-blanca1.jpeg" alt="Camiseta 1 Frontal" class="active">
+                    <img src="imagenes/butler-blanca2.jpeg" alt="Camiseta 1 Trasera">
+                    <div class="controls">
+                        <span class="prev" onclick="prevImage(this)">&#10094;</span>
+                        <span class="next" onclick="nextImage(this)">&#10095;</span>
+                    </div>
+                </div>
+                <p>Camiseta Heat Butler Blanca 23-24</p>
+                <span>Precio: 25€</span>
             </div>
             <div class="camiseta">
-                <img src="camiseta2.jpg" alt="Camiseta 2">
-                <p>Descripción breve de la camiseta 2</p>
-                <span>Precio: $60</span>
+                <div class="carousel">
+                    <img src="imagenes/butler-negra1.jpeg" alt="Camiseta 2 Frontal" class="active">
+                    <img src="imagenes/butler-negra2.jpeg" alt="Camiseta 2 Trasera">
+                    <div class="controls">
+                        <span class="prev" onclick="prevImage(this)">&#10094;</span>
+                        <span class="next" onclick="nextImage(this)">&#10095;</span>
+                    </div>
+                </div>
+                <p>Camiseta Heat Butler Negra 23-24</p>
+                <span>Precio: 25€</span>
             </div>
+            
+            <!-- Más camisetas aquí -->
+        </section>
+        <section class="camisetas">
+            <div class="camiseta">
+                <div class="carousel">
+                    <img src="imagenes/boston-verde1.jpeg" alt="Camiseta 1 Frontal" class="active">
+                    <img src="imagenes/boston-verde2.jpeg" alt="Camiseta 1 Trasera">
+                    <div class="controls">
+                        <span class="prev" onclick="prevImage(this)">&#10094;</span>
+                        <span class="next" onclick="nextImage(this)">&#10095;</span>
+                    </div>
+                </div>
+                <p>Camiseta Boston Tatum Verde 23-24</p>
+                <span>Precio: 25€</span>
+            </div>
+            <div class="camiseta">
+                <div class="carousel">
+                    <img src="imagenes/brooklyn-negra1.jpeg" alt="Camiseta 2 Frontal" class="active">
+                    <img src="imagenes/brooklyn-negra2.jpeg" alt="Camiseta 2 Trasera">
+                    <div class="controls">
+                        <span class="prev" onclick="prevImage(this)">&#10094;</span>
+                        <span class="next" onclick="nextImage(this)">&#10095;</span>
+                    </div>
+                </div>
+                <p>Camiseta Brooklyn Bridges Negra 23-24</p>
+                <span>Precio: 25€</span>
+            </div>
+            
+            <!-- Más camisetas aquí -->
+        </section>
+        <section class="camisetas">
+            <div class="camiseta">
+                <div class="carousel">
+                    <img src="imagenes/boston-blanco1.jpeg" alt="Camiseta 1 Frontal" class="active">
+                    <img src="imagenes/boston-blanco2.jpeg" alt="Camiseta 1 Trasera">
+                    <div class="controls">
+                        <span class="prev" onclick="prevImage(this)">&#10094;</span>
+                        <span class="next" onclick="nextImage(this)">&#10095;</span>
+                    </div>
+                </div>
+                <p>Camiseta Boston Brown Blanca 23-24</p>
+                <span>Precio: 25€</span>
+            </div>
+            <div class="camiseta">
+                <div class="carousel">
+                    <img src="imagenes/nets1.jpeg" alt="Camiseta 2 Frontal" class="active">
+                    <img src="imagenes/nets2.jpeg" alt="Camiseta 2 Trasera">
+                    <div class="controls">
+                        <span class="prev" onclick="prevImage(this)">&#10094;</span>
+                        <span class="next" onclick="nextImage(this)">&#10095;</span>
+                    </div>
+                </div>
+                <p>Camiseta Nets Bridges 23-24</p>
+                <span>Precio: 25€</span>
+            </div>
+            
             <!-- Más camisetas aquí -->
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
